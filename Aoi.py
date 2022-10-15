@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle
 
-class CommNet:
+class CommNet:                                              #Classe communication network
     def __init__(self, name, range: float, accPosx: float, accPosy: float, color):
         self.name = name
         self.range = range
