@@ -20,5 +20,5 @@ class Aoi:                                                  #Classe Área de int
                             lw=1))                          #Grossura da borda
         plt.show()                                          #Mostra a imagem
 ##Test##
-area = Aoi(x=0,y= 0,h=40,w=50,beta=20)                      #Instanciando objeto
+area = Aoi(0,0,40,50,35)                      #Instanciando objeto
 area.plot()                                                 #chamando metodo plot para o objeto instaciado
