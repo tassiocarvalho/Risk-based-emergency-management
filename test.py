@@ -47,7 +47,7 @@ class AoI:                                                  #Classe Área de int
                             edgecolor='Blue',               #Define cor da borda
                             facecolor='none',               #Define cor da área
                             lw=1))                          #Grossura da borda             
-    plt.show()
+plt.show()
 
 area = AoI(0,0,30,50,0)
 area.plot()
