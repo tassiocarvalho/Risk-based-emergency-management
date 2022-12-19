@@ -4,6 +4,7 @@ import numpy as np
 import numpy.ma as ma
 from ex002 import *
 import ex002
+from circle2 import *
 ex=2
 
 WINDOWS = 0
@@ -29,22 +30,22 @@ hs = h/hMBs
 M = wMBs
 N = hMBs
 
-#CTSR=0 #Valor máximo da função objetivo, considerando uma região com todas as redes sobrepostas
+CTSR=0 #Valor máximo da função objetivo, considerando uma região com todas as redes sobrepostas
 
-#for i in range(1,len(paramNets),1):
-   #CTSR= CTSR - (paramNets[i]) + (paramNets[i]) + (paramNets[i]) + (paramNets[i])
+for i in range(len(paramNets)):
+    CTSR = CTSR - paramNets[i].c + paramNets[i].t + paramNets[i].s + paramNets[i].r
 
 ##PLOT INICIAL
 color = np.array(['k' ,'b' ,'m' ,'c'])
 nC = ma.size(color)
 
-#if (PLOT_GRAPHS == 1):
-    #cLegends = []
-    #iNets = []
+# if (PLOT_GRAPHS == 1):
+#     cLegends = []
+#     iNets = []
 
-    #for i in range(len(networks[0])):
-        #graphCircle = circle2(networks(i,2), networks(i,3),paramNets( networks(i,1) ).R)
-        #set(graphCircle,'LineStyle','-','LineWidth',1.5,'EdgeColor',color(mod( networks(i,1),nC )+1))
+#     for i in range(len(networks)):
+#         graphCircle = cric#circle2(networks(i,2), networks(i,3),paramNets( networks(i,1) ).R)
+#         set(graphCircle,'LineStyle','-','LineWidth',1.5,'EdgeColor',color(mod( networks(i,1),nC )+1))
 
         #if (networks[i] in iNets):
             #iNets.append(networks[i])

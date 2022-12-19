@@ -46,7 +46,7 @@ r1 = 4  #confiabilidade
 
 #paramNets = concat[paramNets , struct(R=Rn1, name=nm1, c=c1, t=t1, s=s1, r =r1)]
 
-paramNets.append({'R': Rn1, 'name':nm1, 'c':c1, 't':t1, 's':s1, 'r' :r1})
+p1 = struct(R=Rn1, name=nm1, c=c1, t=t1, s=s1, r=r1)
 
 #NETWORK 2 5G
 Rn2 = 400       #metros do alcance da rede
@@ -57,7 +57,7 @@ s2 = 3          #nível de segurança
 r2 = 2          #confiabilidade
 
 
-paramNets.append({'R': Rn2, 'name':nm2, 'c':c2, 't':t2, 's':s2, 'r' :r2})
+p2 = struct(R=Rn2, name=nm2, c=c2, t=t2, s=s2, r=r2)
 
 #Network 3 - 6LoWPAN
 Rn3 = 150  #metros do alcance da rede
@@ -67,7 +67,7 @@ t3 = 3
 s3 = 2
 r3 = 3
 
-paramNets.append({'R': Rn3, 'name':nm3, 'c':c3, 't':t3, 's':s3, 'r' :r3})
+p3 = struct(R=Rn3, name=nm3, c=c3, t=t3, s=s3, r=r3)
 
 #Network 4 - LoRa
 Rn4 = 2500
@@ -76,7 +76,12 @@ c4 = 5
 t4 = 1
 s4 = 2
 r4 = 4
-paramNets.append({'R': Rn4, 'name':nm4, 'c':c4, 't':t4, 's':s4, 'r' :r4}) #poo
+p4= struct(R=Rn4, name=nm4, c=c4, t=t4, s=s4, r=r4)
+
+paramNets.append(p1)
+paramNets.append(p2)
+paramNets.append(p3)
+paramNets.append(p4)
 
 nNets = [100, 30, 50, 2]
 #PARÂMETROS DA FUNÇÃO OBJETIVO
@@ -91,12 +96,13 @@ R = 1 #'R'eliability
 nConnLevels = 3
 
 constConnLevels= np.arange(0,nConnLevels+1)
-print(constConnLevels)
+#print(constConnLevels)
 connLevelMin = 0.00001
 
-connLevelRange= np.arange(connLevelMin,1,(1 - connLevelMin) / nConnLevels)
-print(connLevelRange)
+connLevelRange= np.arange(connLevelMin,1.1,((1 - connLevelMin) / nConnLevels))
+#print(connLevelRange)
 levelSum = nConnLevels*(1+nConnLevels)/2
+
 
 levelColors = ['r','y','g']
 
