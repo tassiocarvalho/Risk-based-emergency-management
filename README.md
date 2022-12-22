@@ -1,5 +1,9 @@
 # Risk-based-emergency-management
 
+Objetivo inicial: Criar um algoritmo que plote(desenhe) uma área quadrangular e o raio de alcançe de suas determinadas redes ou seja uma área circula para cada rede<br/>
+Metodologia: Uso inicial das bibliotecas Numpy e Matlablip no Python e criação de algoritmos de busca de profundidade para determinar as próximidades de rede
+
+
 Materiais usado:<br/>
 MATLAB<br/>
 Biblioteca do Python Numpy<br/>
