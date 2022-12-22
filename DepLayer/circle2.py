@@ -1,16 +1,16 @@
-from ex002 import *
-import matplotlib.pyplot as plt
-import numpy as np
-def circle2 (self, x: float, y: float, r: float):
-    d = self.r*2
-    px = self.x-self.r
-    py = self.y-self.r
+# from ex002 import *
+# import matplotlib.pyplot as plt
+# import numpy as np
+# def circle2 (self, x: float, y: float, r: float):
+#     d = self.r*2
+#     px = self.x-self.r
+#     py = self.y-self.r
 
-    h = rectangle('Position',[px, py, d, d],'Curvature',[1,1])
-    daspect = [1,1,1]
-    return h
+#     h = rectangle('Position',[px, py, d, d],'Curvature',[1,1])
+#     daspect = [1,1,1]
+#     return h
 
-circle2(1,1,1,1)
+# circle2(1,1,1,1)
 ###############################################################
  
 # x = np.linspace( -0.7 , 0.7 , 150 )

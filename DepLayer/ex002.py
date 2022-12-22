@@ -13,7 +13,7 @@ w = 10000
 
 x1 = 500
 y1 = 500
-beta = 30*math.pi/180
+beta = 0*math.pi/180
 sinBeta = math.sin(math.radians(beta))
 cosBeta = math.cos(math.radians(beta))
 

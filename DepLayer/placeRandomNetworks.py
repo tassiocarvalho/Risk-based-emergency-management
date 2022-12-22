@@ -14,19 +14,19 @@ for i in range(len(nNets)):
         st = xMin+offset
         sp = xMax-offset
         qtt = 1
-        sx = np.random.uniform((sp,(sp-st),(qtt)))+st
+        sx = np.random.uniform((sp,(sp-st),(1)+st))
 
         APx = sx
 
         st = yMin+offset
         sp = yMax-offset
         qtt = 1
-        sy = np.random.uniform((sp,(sp-st),(qtt)))+st
+        sy = np.random.uniform((sp,(sp-st),(1)+st))
         
         APy = sy
 
         APi = [APx, APy]
         networks.append(APi)
 
-        print(networks)
+print(networks)
         

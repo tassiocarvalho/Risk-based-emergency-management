@@ -47,10 +47,10 @@ nC = ma.size(color)
 #         graphCircle = cric#circle2(networks(i,2), networks(i,3),paramNets( networks(i,1) ).R)
 #         set(graphCircle,'LineStyle','-','LineWidth',1.5,'EdgeColor',color(mod( networks(i,1),nC )+1))
 
-        #if (networks[i] in iNets):
-            #iNets.append(networks[i])
-            #hline = plot(NaN,NaN,'LineWidth',1.5,'LineStyle','-','Color',color(mod( networks(i,1),nC )+1))
-            #cLegends.append(paramNets[networks[i]].name)
+#         # if (networks[i] in iNets):
+#         #     iNets.append(networks[i])
+#         #     hline = plot(NaN,NaN,'LineWidth',1.5,'LineStyle','-','Color',color(mod( networks(i,1),nC )+1))
+#         #     cLegends.append(paramNets[networks[i]].name)
 
 MBs = np.zeros((hMBs,wMBs),float)
 MBs_classes = np.zeros((hMBs,wMBs),float)
@@ -114,3 +114,7 @@ y4 = y1 - h*cosBeta + w*sinBeta
         #graphCircle = circle2(networks(i,2), networks(i,3),paramNets( networks(i,1) ).R)
        #set(graphCircle,'LineStyle',':','LineWidth',1.5,'EdgeColor',color(mod( networks(i,1),nC )+1))
 #legend(cLegends)
+
+
+zoneList = np.array(nConnLevels)
+countZones=np.zeros(nConnLevels)
